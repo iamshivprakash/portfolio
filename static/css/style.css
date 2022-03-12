@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+.bg-theme {
+  background: #000046;
+  margin-top: 60px;
+  /* background: #093d7a; */
+  /* background: #0033a0; */
+}
+
+.bg-grad-theme {
+  background: #000046; /* fallback for old browsers */
+  margin-top: 60px;
+  background: -webkit-linear-gradient(
+    to left,
+    #000046,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #000046,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* height: 2100px; */
+}
+.bgnd-theme {
+  margin-top: 60px;
+  height: 35vh;
+  background: url("../../static/img/background.jpg");
+  background-repeat: no-repeat;
+  /* opacity: 0.7; */
+  background-size: cover;
+  /* background-color: #185a9d; */
+}
+
+.bg-banner {
+  background: #43cea2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #185a9d,
+    #43cea2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #185a9d,
+    #43cea2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+  overflow-x: hidden;
+} */
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 400;
+  color: white;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.head {
+  margin-left: 80px;
+}
+.heading {
+  color: white;
+  font-size: 3.6rem;
+  font-weight: 700;
+  word-spacing: 6px;
+  letter-spacing: 3px;
+  font-family: "EB Garamond", serif;
+}
+
+.sub-heading {
+  margin-top: -15px;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  color: white;
+  font-family: "EB Garamond", serif;
+}
+
+/* .footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+} */
+
+.scroll-up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  color: white;
+  background-color: #555;
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 7px 7px 7px 9px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scroll-up:hover {
+  color: #555;
+  background-color: white;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.info_container {
+  margin: auto auto;
+}
+
+.flex-center-div {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.type-writer {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.type-writer:hover {
+  color: white;
+}
+
+.list-level {
+  min-width: 200px;
+  margin: 0px;
+}
+.list-value {
+  margin: 0px;
+}
+.certificate-container {
+  background: #efefef;
+  border-radius: 10px;
+  width: 92vw;
+}
+.certificate-info {
+  margin: 0px;
+}
+.certificate-img {
+  background: transparent;
+  height: fit-content;
+  border: none;
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: all 0.8s ease-in-out;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin: auto; */
+}
+.certificate-img:hover {
+  /* background: #1cb5e0; */
+  transform: scale(1);
+  border: 1px solid #eee;
+}
+.banner {
+  height: 90vh;
+}
+.projects_card {
+  transform: scale(1);
+  transition: all ease-in-out;
+}
+.projects_card:hover {
+  transform: scale(1.04);
+  color: white;
+  background: #00113f;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+/* section {
+  padding: 60px 0;
+} */
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #34b7a7;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #34b7a7;
+  position: relative;
+}
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #1d685f;
+  margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #effbf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #34b7a7;
+}
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #34b7a7;
+}
+.intro-container {
+  background-color: #000046;
+  margin-top: 5%;
+}
+.intro-desc ul {
+  text-align: left;
+}
+.intro-desc ul li {
+  list-style: none;
+  padding: 5px;
+}
+.intro-desc p {
+  text-align: left;
+  font-size: 18px;
+  font-style: italic;
+}
+.picture {
+  position: relative;
+}
+.picture img {
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  display: flex;
+  width: 300px;
+  height: 335px;
+}
+/* -------------------------------------------------- */
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills .progress-bar-wrap {
+  background: #f3f3f3;
+}
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #34b7a7;
+}

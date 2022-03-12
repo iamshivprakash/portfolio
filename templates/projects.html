@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}
+    Projects
+{% endblock title %}
+{% include 'header.html' %}
+{% block body %}
+    <div class="container-fluid bgnd-theme">
+        <h1 class="text-white display-2 p-5 text-center">My Projects</h1>
+    </div>
+
+    <section class="projects">
+        <div class="container my-5">
+            <div class="row mx-auto">
+                <!-- Here the loop for projects will begin -->
+                {% for project in projects %}
+                    
+                
+                <div class="card projects_card my-2 mx-2" style="width: 16rem;">
+                    <img src="{{url_for('static',filename='img/'+project[4])}}" class="card-img-top mx-auto mt-3" style="width: 150px; height: 150px;" alt="Project Image">
+                    <div class="card-body">
+                      <h5 class="card-title">{{(project[1])[:20]}}</h5>
+                      <p class="card-text">{{(project[2])[:100]}}...............</p>
+                      <a href="{{project[3]}}" target="_blank" class="btn btn-primary" style="width: 100%;">View Project</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+{% endblock body %}

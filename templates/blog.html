@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}
+    Blog
+{% endblock title %}
+{% include 'header.html' %}
+{% block body %}
+    <div class="container-fluid bgnd-theme">
+        <h1 class="text-white display-2 p-5 text-center">My Blogs</h1>
+    </div>
+    <main>
+        <section class="introduction my-5">
+            <div class="section-title container">
+                <h2>Good to see you here</h2>
+                <div class="intro-container row">
+                  <div class="col-md-10 intro-desc">
+                      <h4 class="text-white p-4">
+                          Please wait for some time.
+                          <p class="text-center mt-4">I am working very hard to bring it very soon for you.</p>
+                          <div>
+                              <p class="text-center p-3">Come back after some time.</p>
+                          </div>
+                      </h4>
+                  </div>
+                  <div class="col-md-2 picture">
+                      <img src="{{url_for('static',filename='img/shiv.png')}}" alt="">
+                  </div>
+                </div>
+              </div>
+        </section>
+        </main>
+    {% include 'footer.html' %}
+{% endblock body %}

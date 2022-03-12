@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}
+    Certifications
+{% endblock title %}
+{% include 'header.html' %}
+{% block body %}
+    <div class="container-fluid bgnd-theme">
+        <h1 class="text-white display-2 p-5 text-center">My Certifications</h1>
+    </div>
+    <section id="certifications" class="my-5">
+        {% for certificate in certificates %}
+        <div class="my-3">
+            <div class="row mx-auto d-flex justify-content-center certificate-container">
+                <div class="col-md-8 col-12">
+                    <div class="p-3">
+                        <h2 class="">{{certificate[1]}}</h2>
+                        <h4 class="">{{certificate[2]}}</h4>
+                        <h5>Grade Achieved: {{certificate[7]}}</h5>
+                        <div class="progress my-2">
+                            <div class="progress-bar bg-info" role="progressbar" style="width:90%" aria-valuenow="certificate[7]" aria-valuemin="0" aria-valuemax="100"> {{certificate[7]}}%</div>
+                        </div>
+                        <dl class="d-flex certificate-info">
+                            <dt class="list-level">CertificateName:</dt>
+                            <dd class="list-value">{{certificate[1]}}</dd>
+                        </dl>
+                        <dl class="d-flex certificate-info">
+                            <dt class="list-level">Issuing Organization:</dt>
+                            <dd class="list-value">{{certificate[3]}}</dd>
+                        </dl>
+                        <dl class="d-flex certificate-info">
+                            <dt class="list-level">Issue Date:</dt>
+                            <dd class="list-value">{{certificate[4]}}</dd>
+                        </dl>                
+                        <dl class="d-flex certificate-info">
+                            <dt class="list-level">Expiration Date:</dt>
+                            <dd class="list-value">{{certificate[5]}}</dd>
+                        </dl>                
+                        <dl class="d-flex certificate-info">
+                            <dt class="list-level">Credential ID:</dt>
+                            <dd class="list-value">{{certificate[6]}}</dd>
+                        </dl>
+                        <dl class="d-flex certificate-info">
+                            <dt class="list-level">Credential URL:</dt>
+                            <dd class="list-value">{{certificate[8]}}</dd>
+                        </dl>
+                        <div>
+                            <button class="btn btn-warning mt-3" style="width:100%">View Project</button>
+                        </div>                                
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 card certificate-img mt-3">
+                    <img src="{{url_for('static',filename='certificates/'+certificate[6]+'.jpeg')}}" alt="certificate" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        {% endfor %}        
+    </section>
+
+    {% include 'footer.html' %}
+{% endblock body %}

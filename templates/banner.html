@@ -1,0 +1,55 @@
+<section id="feature" class="bgnd-theme banner">
+    <div class="row banner mx-auto">
+        <div class="col-md-8 my-4 pt-5 info_container">
+            <h1 class="display-2 heading text-center pt-5">Hello! I'm <span class="text-warning bold">Shiv Prakash.</span></h1>
+            <p class="sub-heading text-center">I am truely in love with creating ideas and developing innovations.</p>
+            
+            <div class="flex-center-div py-4">
+                <a href="" class="typewrite type-writer" data-period="2000" data-type='[ "Technology Enthusiast","Data Science Aspirant.", "Web Developer", "A Coder", "Python Enthusiast." ]'>
+                <span class="wrap"></span>
+                </a>
+            </div>
+            <div class="flex-center-div my-4">
+                <a href="{{url_for('static',filename='img/resume.pdf')}}" target="_blank">
+                    <button class="btn btn-warning me-3 px-3 py-2 mybutton">Get Resume</button>
+                </a>
+                <button class="btn btn-warning px-3 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Request Callback</button>
+            </div>
+        </div>
+        <!-- Rignt Side Bigger Profile Image -->
+        <!-- <div class="col-md-3 d-none d-md-block pt-5 m-5">
+            <img src="{{url_for('static',filename='img/money.png')}}" alt="profile" class="img-fluid pt-5">
+        </div> -->
+    </div>
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Request Call Back</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action="" class="form">
+                <label for="name">Enter Your Name</label><br>
+                <input type="text" class="form-control"><br>
+                <label for="email">Enter your email</label><br>
+                <input type="email" class="form-control"><br>
+                <label for="phone">Enter your Phone Number</label><br>
+                <input type="number" class="form-control"><br>
+                <label for="message">Enter your message</label><br>
+                <textarea name="message" class="form-control"></textarea>
+                <div class="flex-center-div">
+                    <button type="button" class="btn btn-warning btn-block my-3 py-2 px-4" data-bs-dismiss="modal">Submit Request</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+{% include 'header.html' %}
+{% include 'banner.html' %}
+<main>
+<section class="introduction my-5">
+    <div class="section-title container">
+        <h2>Introduction</h2>
+        <div class="intro-container row">
+          <div class="col-md-10 intro-desc">
+              <p class="text-white p-4">Data is the new gold. The power and the emphasis of this sentence initiated my journey into the mysterious world of Data Science.
+                  Like many others, my initial interest lay in web development, and I still continue to design websites.
+                  But for a student who is curious and take interest in uncovering the hidden facts available around him. I realized my passion for the data science and analytics.
+    
+                  Data science has been my major point of interest for a year now. My zest lies in Data Collection, Data Analysis, Data Visualization and developing Machine Learning models.
+                  I find myself comfortable coding in python but I never limit myself learning python just for Data Science.
+                  I also love to develop short web applications in python Flask Framework.
+              </p>
+          </div>
+          <div class="col-md-2 picture">
+              <img src="{{url_for('static',filename='img/shiv.png')}}" alt="">
+          </div>
+        </div>
+      </div>
+</section>
+</main>
+{% include 'footer.html' %}
+{% endblock %}

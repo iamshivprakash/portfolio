@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% block title %}
+    About Me
+{% endblock title %}
+{% include 'header.html' %}
+{% block body %}
+    <div class="container-fluid bgnd-theme">
+        <h1 class="text-white display-2 p-5 text-center">About Me</h1>
+    </div>
+    <main id="main">
+
+        <!-- ======= Resume Section ======= -->
+        <section id="resume" class="resume mt-5">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="section-title">
+              <h2>Introduction</h2>
+              <p class="text-center">Data is the new gold. The power and the emphasis of this sentence initiated my journey into the mysterious world of Data Science.
+                Like many others, my initial interest lay in web development, and I still continue to design websites.
+                But for a student who is curious and take interest in uncovering the hidden facts available around him. I realized my passion for the data science and analytics.
+
+                Data science has been my major point of interest for a year now. My zest lies in Data Collection, Data Analysis, Data Visualization and developing Machine Learning models.
+                I find myself comfortable coding in python but I never limit myself learning python just for Data Science.
+                I also love to develop short web applications in python Flask Framework.
+            </p>
+              <div class="intro-container row">
+                <div class="col-md-10 pt-4 text-white">
+                    <h3>Web Developer &amp; Data Science Aspirant </h3>
+                    <p class="px-5">
+                        Innovative and deadline-driven Web Developer with 2+ years of experience designing and developing
+                         user-centered websites from initial concept to final, polished deliverable.
+                    </p>
+                    <div class="row intro-desc">
+                      <div class="col-md-6">
+                        <ul>
+                          <li><strong>Name:</strong> Shiv Prakash</li>
+                          <li><strong>Birthday:</strong> 15 September 1999</li>
+                          <li><strong>Phone:</strong> +91 9570597678</li>
+                          <li><strong>City:</strong> Samastipur, Bihar, India</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul>
+                          <li><strong>Age: </strong>22</li>
+                          <li><strong>Degree: </strong>Bachelor</li>
+                          <li><strong>Email: </strong> iamshivprakash04@gmail.com</li>
+                          <li><strong>Freelance: </strong> Available</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-md-2 picture">
+                    <img src="{{url_for('static',filename='img/shiv.png')}}" alt="">
+                </div>
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="col-lg-6">
+                   
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                  <h4>Bachelor of Electrical Engineering</h4>
+                  <h5>2018 - 2022</h5>
+                  <p><em>Heritage Institute 0f Technology, Kolkata, India</em></p>
+                  <p>CGPA: 7.82(till-present)</p>
+                </div>
+                <div class="resume-item">
+                  <h4>Intermediate (BSEB-class-12)</h4>
+                  <h5>2015 - 2017</h5>
+                  <p><em>Simultala Awasiya Vidyalaya, Jamui (Bihar)</em></p>
+                  <p>(PCM, Hindi, English, Computer Science)</p>
+                  <p>Percentage 74.6%</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Metriculation (BSEB-class-10)</h4>
+                    <h5>2014 - 2015</h5>
+                    <p><em>Simultala Awasiya Vidyalaya, Jamui (Bihar)</em></p>
+                    <p>(Science, Hindi, English, Social Science, Mathematics)</p>
+                    <p>Percentage 94.6%</p>
+                </div>
+               </div>
+              <div class="col-lg-6">
+                <h3 class="resume-title">Projects Experience</h3>
+                <div class="resume-item">
+                  <h4>Expense Tracker Firebase Web App</h4>
+                  <h5>Jan 2022 - Jan 2022</h5>
+                  <p><em>Javascript and Firebase Project(Self Practice)</em></p>
+                  <p>
+                  <ul>
+                    <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                    <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+                    <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                  </ul>
+                  </p>
+                </div>
+                <div class="resume-item">
+                  <h4>
+                    SpaceX-Falcon-9-First-Stage-Landing-Prediction</h4>
+                  <h5>Nov 2021 - Jan 2022</h5>
+                  <p><em>Data Science Project(Self Practice)</em></p>
+                  <p>
+                  <ul>
+                    <li>The data for this project was sourced from space x REST API, and Wikipedia.</li>
+                    <li>performed some data wrangling in order to determine the best predictors for the outcome.</li>
+                    <li>EDA and feature scaling were done with the help of visualization using scatter and line plots.</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </section><!-- End Resume Section -->    
+      </main><!-- End #main -->
+
+    {% include 'footer.html' %}
+{% endblock body %}
